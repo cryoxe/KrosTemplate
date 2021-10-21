@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/sidenav.css" media="screen" />
+	<style>
+	.pagetext {
+			Color: #d37f19;
+	}
+	</style>
+</head>
+
+<body>
+
+	<!-- Side navigation -->
+	<nav class="sidenav">
+		<a href="../KrosTemplate.html">Introduction</a>
+		<a href="Prérequis.html">Les Prérequis</a>
+		<a href="Présentation.html">Présentation</a>
+		<a href="Exporter.html">Exporter la carte</a>
+		<a href="Modifications.html">Modifier la carte</a>
+		<a href="EditText.html">Changer les textes</a>
+		<a href="Importer.html">Mettre des images</a>
+		<a href="Tips.html">Conseils</a>
+	</nav>
+
+	<!-- Page content -->
+	<div class="main">
+		<h1>Modifier la carte</h1>
+		<p>
+			Maintenant on va attaquer comment changer l'aspect de la carte !
+			<br></br>
+			Comme déjà survolé plus tôt <i>(du moins, si vous suivez le tuto dans l'ordre)</i> la partie calque (sur votre droite normalement)
+			représente toutes les images et images textes qui compose la carte.
+			On va d'abord voir comment on peut modifier l'apparance de la carte avec leur visibilité.  
+		</p>
+
+		<h3>1- Calque visible ou non</h3>
+		<p>
+			<br></br>
+			Dans Gimp c'est très simple, un calque (ou groupe de calques) est visible sur l'image si l'oeil à gauche du calque apparaît.
+			Dans le cas contraire, le calque est "invisible"
+			<br></br>
+			<img src="../images/eye.png"/>
+			<br></br>
+			ici vous pouvez voir que le sort N°1 est visible ce qui concorde avec le fait qu'on puisse le voir sur l'image.
+			<i>Merci capitaine Obvious !</i>
+			Si vous avez compris ça, vous aller très vite comprendre ce qu'on peut faire avec le logiciel.
+			<br></br>
+			<b>Un petit exemple :</b>
+			<br></br>
+			<img src="../images/carte.png"/>
+			<br></br>
+			La carte de base ne présente qu'un seule sort, si vous souhaitez que votre Krosmaster en possède 4, alors :
+		</p>
+		<ol>
+			<li><i>cliquer sur l'oeil</i> du groupe de calques <b>Les descriptions</b> pour faire "disparaître" la description.</li>
+			<li>cliquer sur l'emplacement ou devrait se trouver l'oeil des groupes de calques <b>[Sort 2], [Sort 3], [Sort 4]</b> pour les faire apparaître.</li>
+		</ol>
+		<p>
+			Résultat :
+			<br></br>
+			<img src="../images/4 sorts.png"/>
+			<br></br>
+			En 4 clics, votre carte ressemble à ça :
+			<br></br>
+			<img src="../images/carte 2.png"/>
+			<br></br>
+			Á partir de là, vous devriez avoir compris : vous pouvez commencer à tout toucher (n'hésitez pas à revenir en cas de problème).
+			<br></br>
+			j'ai un autre exemple un peu plus poussé :
+			<br></br>
+			Vous souhaitez sans doute vouloir modifier un sort pas vrai ? Mais faites attention car  : 
+			<i>un sort est plutôt complexe et prend en compte beaucoup de parmaètres (calques).</i>
+			<br></br>
+			Pour les curieux qui ont essayer d'appuyer sur tous les "+" qui compose les calques d'un sort. vous avez sûrement été pris de vertiges
+			(ou bien vous vous êtes demandé comment j'ai eu le courage de faire tout ça...)
+		</p>
+		<h3>2- Les sorts</h3>
+		<p>
+			j'ai un autre exemple un peu plus poussé :
+			<br></br>
+			Vous souhaitez sans doute vouloir modifier un sort pas vrai ? Mais faites attention car  : 
+			<i>un sort est plutôt complexe et prend en compte beaucoup plus de paramètres (calques).</i>
+			<br></br>
+			Pour les curieux qui ont essayés d'appuyer sur tous les "+" qui compose les calques d'un sort. vous avez sûrement été pris de vertiges
+			(ou bien vous vous êtes demandés comment j'ai eu le courage de faire tout ça...). Vous n'avez pas à vous inquièter, on va faire ça étape par étape.
+			<br></br>
+			Un sort, ici, le [Sort 1]. Est composé de :
+		</p>
+		<ul>
+			<li>Ses stats.</li>
+			<li>Son type de portée.</li>
+			<li>Son type d'élément.</li>
+			<li>Son type de coût (PA, PM, etc...).</li>
+			<li>La couleur de son bandeau.</li>
+		</ul>
+		<p>
+			<img src="../images/childSort.png"/>
+			<br></br>
+			C'est pas sorcier jusque là non ? 
+			Je vous consille de toucher à la visibilité de ces groupes de calques pour voir à quoi ils correspondent sur la carte.
+			<br></br>
+			Vous voulez changer le type de portée de votre sort ? Ouvrez le groupe de calque <b>[Sort 1] Types de portés</b>
+			<br></br>
+			<img src="../images/typePortée.png"/>
+			<br></br>
+			Plutôt facile non ? y a même un code couleur ! Désactivez l'oeil du calque <B>CaC</B> (cela fera disparaître le "poing"),
+			cliquez sur la portée que vous voulez.
+			<br></br>
+			les chiffres de la portée ne sont pas visible ? Ouvrez le groupe de calque <b>Stats du [SORT 1]</b>.
+			<br></br>
+			<img src="../images/statsSort.png"/>
+			<br></br>
+			Comme c'est étrange ? la portée minimale et maximale ne sont pas visibles ! Réactivez les "yeux" et tout devrait marcher.
+		</p>
+		<h3>3- Déplacer la description</h3>
+		<p>
+			Vous avez peut-être remarqué un problème avec la description de la carte. 
+			En effet si votre Krosmaster possède 2 sort que vous souhaitez une petite description et une case de pouvoir dite "moyenne" :
+			<br></br>
+			Vous verrez que la case moyen pouvoir passe <b>sur</b> la case petite description ; pour régler ça, vous devrez déplacer la description à la main.
+			<br></br>
+			<img src="../images/exempleDescrCarte.png"/>
+		</p>
+		<ul>
+			<li>Sélectionnez le calque ou groupe de calque que vous voulez déplacer (ici petite description). <a href="Tips.html">Conseil N°3</a></li>
+			<li>Cliquez sur l'outil de déplacement. <img src="../images/outilDeDéplacement.png"/></li>
+			<li>Dans les options de cet outil, veuillez cocher la case qui permet au déplacement de déplacer la calque actif (=calque sélectionné). <img src="../images/déplacerCalqueActif.png"/></li>
+			<li>Cliquer sur la description 
+			(même si vous ne la voyez pas, vous pouvez voir ses contours, sinon, vous pouvez juste désactiver la case des pouvoirs le temps du déplacement).</li>
+			<li>Déplacez votre description de manière à ce qu'elle recouvre la case du sort N°3. <a href="Tips.html">Conseil N°4</a></li>
+		</ul>
+		<p>
+			<img src="../images/déplacementFini.png"/>
+			<br></br>
+			Et je crois qu'on a fini ce <b>chapitre sur comment modifier l'aspect d'une carte</b>
+			C'était le plus long il me semble...
+		</p>
+	</div>
+
+</body>
+
+</html>

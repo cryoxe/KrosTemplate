@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/sidenav.css" media="screen" />
+	<style>
+	.pagetext {
+			Color: #d37f19;
+	}
+	</style>
+</head>
+
+<body>
+
+	<!-- Side navigation -->
+	<nav class="sidenav">
+		<a href="../KrosTemplate.html">Introduction</a>
+		<a href="Prérequis.html">Les Prérequis</a>
+		<a href="Présentation.html">Présentation</a>
+		<a href="Exporter.html">Exporter la carte</a>
+		<a href="Modifications.html">Modifier la carte</a>
+		<a href="EditText.html">Changer les textes</a>
+		<a href="Importer.html">Mettre des images</a>
+		<a href="Tips.html">Conseils</a>
+	</nav>
+
+	<!-- Page content -->
+	<div class="main">
+		<h1>Les Conseils :</h1>
+		<p>
+			Petite liste de conseil non-exhaustive :
+		</p>
+		<h4>1 - Chargement des polices</h4>
+		<p>
+			Gimp ne charge les polices qu'au moment où il démarre. 
+			Donc si vous voulez rajouter vos propres polices il faut mieux le faire avant d'ouvrir Gimp, ou bien il faudra redémarrer le logiciel.
+		</p>
+
+		<h4>2 - Mise en évidence</h4>
+		<p>
+			Gimp entoure toujours dans l'image, la partie de l'image ou le groupe d'images que vous avez entourés dans la partie calque.
+			Il l'entoure en jaune si c'est une image ou en bleu si ce calque contient plusieurs images.
+		</p>
+
+		<h4>3 - Déplacement groupe de calques</h4>
+		<p>
+			l'un des avantages à faire des groupes de calques étant que si vous le déplacez, tous ses "enfants" (= calques le composant) se déplacerons avec lui.
+		</p>
+
+		<h4>4 - Déplacement orthogonal</h4>
+		<p>
+			Si vous maintenez <b>CTRL</b> pendant que vous déplacez un calque, le calque se déplacera en conservant son abscisse ou son ordonnée.
+		</p>
+		
+		<h4>5 - Couleurs personnalisées</h4>
+		<p>
+			Lorsque vous souhaitez utiliser une couleur particulière, vous devrier utiliser <b>La pipette à couleur</b>, 
+			puis copier la notation HTLM afin de la coller autre part.
+		</p>
+		
+		<h4>6 - Police par défaut</h4>
+		<p>
+			Gimp prévilégera la police (ainsi que sa taille) inscrite dans l'option de l'outil de texte plutôt que celle utilisée sur la bulle.
+			Ce qui signifie que si vous effacer tout le contenu d'une bulle de texte, Gimp prendra la police écrite dans les options de l'outil par défaut.
+			Regardez donc bien si celle de l'option et de la bulle corresponde (au cas où j'en aurais oublié certaines).
+		</p>
+		<h4>7 - Ratio</h4>
+		<p>
+			le symbole de chaine : <img src="../images/ratio.png"/>  sers à conserver les ratio entre les dimensions de l'images, si vous n'en voulez pas,
+			cliquez dessus.
+		</p>
+		<h4>8 - Ordre des calques</h4>
+		<p>
+			Vous l'avez peut-être déjà remarqué mais Gimp trie l'ordre des calques de bas en haut, ce qui signifie qu'un calque ou groupe de calques
+			placer plus haut sera mis au premier plan. C'est pour ça que le fond de la carte est tout en bas.
+		</p>
+		<h4>9 - Images d'exemple</h4>
+		<p>
+			Dans le groupe de calque "Les exemples", vous verrez des bouts de vrais cartes qui peuvent vous aider à voir à quoi une vraie carte Krosmaster
+			est censée ressembler. Dans le dossier de KrosTemplate, vous trouverez aussi un PDF, allez dans Gimp, Fichier > Ouvrir cliquer sur YUGO, ouvrez
+			entrez une résolution entre 500,000 et 1000,000. Vous aurez le PDF sur le côté pour pouvoir avoir une référence. 
+			<br></br>
+			<img src="../images/référence.png"/>
+		</p>
+	</div>
+
+</body>
+
+</html>

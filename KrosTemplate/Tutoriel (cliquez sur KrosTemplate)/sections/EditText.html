@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/sidenav.css" media="screen" />
+	<style>
+	.pagetext {
+			Color: #d37f19;
+	}
+	</style>
+</head>
+
+<body>
+
+	<!-- Side navigation -->
+	<nav class="sidenav">
+		<a href="../KrosTemplate.html">Introduction</a>
+		<a href="Prérequis.html">Les Prérequis</a>
+		<a href="Présentation.html">Présentation</a>
+		<a href="Exporter.html">Exporter la carte</a>
+		<a href="Modifications.html">Modifier la carte</a>
+		<a href="EditText.html">Changer les textes</a>
+		<a href="Importer.html">Mettre des images</a>
+		<a href="Tips.html">Conseils</a>
+	</nav>
+
+	<!-- Page content -->
+	<div class="main">
+		<h1>Changer les textes</h1>
+		<p>
+			Bienvenue dans ce court chapitre sur comment changer les textes !
+			<br></br>
+			On peut voir qu'on calque est une image Texte grâce à cet îcone : <img src="../images/imageTexte.png"/>
+		</p>
+		<h3>1 - Les bases</h3>
+		<p>
+			Cliquez sur l'outil de texte <img src="../images/outilDeTexte.png"/> puis cliquez sur le texte que vous voulez éditer.
+			À partir de là, vous pouvez modifier le texte comme n'importe quel éditeur de texte.
+			<br></br>
+			<img src="../images/éditionTexte.png"/>
+			<br></br>
+			la première grande case indique la police que vous êtes en train d'utiliser, la deuxième indique la taille de la police, la troisième en quelle mesure.
+			Évitez d'y toucher, elles sont déjà à la bonne taille. les 5 cases en bas servent à modifier le texte (italique, souligné, etc...), 
+			cela ne sers à rien d'y toucher non plus. la case tout à droite permet de changer la couleur du texte. <a href="Tips.html">Conseil N°5</a>.
+			<br></br>
+			Normalement avec ces bases, vous pouvez éditer tous les textes du template, les informations présentes ci-dessous sont juste complémentaires,
+			pour ceux qui souhaite poursuive Gimp. <a href="Tips.html">Conseil N°6</a>
+		</p>
+		<h3>2 - Pour aller plus loin</h3>
+		<p>
+			Les deux cases à gauche du carré pour modifier la couleur servent respectivements à modifier le <i>padding vertical et horizontal</i> (=l'espacement entre les lettres),
+			n'y touchez pas sans savoir ce que vous faites, et si vous n'êtes pas adepte du CTRL+Z/Y.
+			<br></br>
+			Maintenant, parlons des options de l'outils de texte : 
+			<br></br>
+			<img src="../images/optionsTexte.png"/>
+			<br></br>
+			l'option "Langue" tout en bas parle d'elle-même (par contre, aucune idée de ce que cela fait concrètement...)
+			Si vous avez utilisé Word au moins une fois dans votre vie, vous devriez savoir ce qu'est que la justification
+			(peut-être pas le terme mais vous <i>devez</i> connaître les symboles) je ne m'y attarde donc pas.
+			<br></br>
+			...Je me rend compte en tapant que si vous rester avec votre souris sur une boite assez longtemps,
+			Gimp vous dira gentillement à quoi elle sert... Moins de texte a écrire pour moi en tout cas.
+			<br></br>
+			On va juste parler un tout petit peu de l'éditeur : <img src="../images/useEditor.png"/>  
+			Si vous cliquez sur cette option une petite fenêtre devrait s'ouvrir
+			<br></br>
+			<img src="../images/editor.png"/>
+			<br></br>
+			C'est généralement plus facile de modifier du texte ici.
+		</p>
+		<h3>3 - Ombrage et autres effets sur le texte</h3>
+		<p>
+			Je vous arrête là ! cet partie est la partie "finale" de ce tuto donc assurez-vous d'avoir terminé
+			l'aspect, texte et image de votre carte avant de revenir ici.
+			<br></br>
+			Pour ajouter des effets à un calque de texte, il faut d'abord <i>convertir</i> le calque de texte en image.
+			Pour cela, un clique droit sur votre calque que vous souhaitez convertir.
+			<br></br>
+			<img src="../images/convertir.png"/>
+			<br></br>
+			Et cliquez sur "Abandonner l'information de texte".
+			<br></br>
+			<b>Attention ! :</b> une fois fait, votre calque de texte sera désormais
+			considéré comme une image, vous ne pourrez donc plus faire de modification de texte dessus.
+			<br></br>
+			Imaginons je veux faire le contour de mon initiative :
+			<br></br>
+			<img src="../images/initiative.png"/>
+			<br></br>
+			je sélectionne le calque puis je vais dans <i>Filtres\Ombre et lumière\Ombre portée</i>.
+			<br></br>
+			<img src="../images/filtre.png"/>
+			<br></br>
+			Une fenêtre devrait s'ouvrir :
+			<br></br>
+			<img src="../images/ombrePortéeAvant.png"/>
+			<br></br>
+			Vous allez tout d'abord mettre le X et le Y à 0 (double clique sur la valeur), vous allez mettre le Rayon de flou à 0
+			et le Grow radius à 2 (entre 1 et 3 selon les préférences) enfin double cliquer sur la barre de couleur et modifiez la notation HTLM
+			pour la couleur que vous voulez (<a href="Tips.html">Conseil N°5</a>), moi j'ai pris la couleur foncé au bord du symbole initiative.
+			Enfin, mettez l'opacité à 1 (entre 0,5 et 1 selon les préférences)
+			<br></br>
+			Et voilà le résultat : 
+			<br></br>
+			<img src="../images/ombrePortéeAprès.png"/>
+			<br></br>
+			Ce n'est pas du tout obligatoire, mais si vous aimez votre carte, c'est quand même beaucoup plus jolie.
+			Vous devez être capable d'obtenir le même résultat avec tous les autres calques de textes.
+			<br></br>
+			Maintenant, le nom du Krosmaster ! c'est vrai qu'il est tout noir, c'est pas très beau !
+			mais on va changer ça... bon déjà "Abandonner l'information de texte" vous savez faire.
+			Ensuite, avec la pipette copiez la couleur dorée des lettres (si vous voulez un nom dorée) ce qui s'en rapporche le plus
+			sur la carte c'est l'emplacement du niveau du Krosmaster. Vous avez la couleur ? ok ! 
+		</p>
+		<ol>
+			<li>Vous avez toujours deux couleurs sélectionnées, (<img src="../images/couleurs.png"/>) il faut que l'une d'entre elle soit la couleur choisie et l'autre du blanc (double clique pour modifier)</li>
+			<li>Cliquez sur le calque du nom du Krosmaster.</li>
+			<li>Cliquez sur l'outil de Sélection par couleur (<img src="../images/sélection par couleur.png"/>) et cliquer sur le nom du Krosmaster (dans l'image). Vous devriez voir les lettres entourées par une sélection</li>
+			<li>Cliquez sur l'outil de Dégradé (<img src="../images/dégradé.png"/>) </li>
+			<li>Dans les options de cet outil, sélectionnez le bon type de dégradé (<img src="../images/typeDégradé.png"/>)</li>
+			<li>Mettez la Forme à "linéaire"</li>
+			<li>Cliquez dans la zone délimitée par Gimp, tracez une ligne verticale</li>
+			<li>Modifier la ligne, ajoutez des points jusqu'à avoir la couleur souhaitée</li>
+		</ol>
+		<p>
+			<img src="../images/dégarder linge.png"/>
+			<br></br>
+			C'est un poil plus complexe, en effet, il faudra que vous fassiez vous même des tests mais on peut arriver à des trucs très beau.
+			Pour enlever la selection du texte aller dans "Selection" puis "Aucune".
+		</p>
+	</div>
+
+</body>
+
+</html>
